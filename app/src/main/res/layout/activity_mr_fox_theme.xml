@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mr_fox_theme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jorge.mrfox.MrFoxTheme"
+    android:background="@drawable/paisaje">
+
+    <Button
+        android:text="@string/loggin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="38dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:onClick="login1"
+        android:layout_below="@+id/loggin_pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/loggin_email"
+        android:textColorHint="@color/blancoTransparente"
+        android:hint="@string/email"
+        android:layout_marginTop="126dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:fontFamily="serif" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/loggin_pass"
+        android:textColorHint="@color/blancoTransparente"
+        android:hint="@string/contrasena"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/loggin_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="serif" />
+
+
+</RelativeLayout>
